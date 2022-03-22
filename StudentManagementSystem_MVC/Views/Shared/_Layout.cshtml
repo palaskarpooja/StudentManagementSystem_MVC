@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - StudentManagementApp</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/MainLayout.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/Img/sms-img.png" />
+                <h1>Student Management System</h1>
+            </div>
+            @*<div class="col-md-6">
+                    <h1>Student Management System</h1>
+                </div>*@
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="nav-menus">
+
+                    <ul class="nav nav-pills">
+                        <li class="active"><a style="border-radius:9px;" href="#">Home</a></li>
+                        <li class="active"><a style="border-radius:9px;" href="#">About</a></li>
+                        <li class="active"><a style="border-radius:9px;" href="#">Contact</a></li>
+                        <li class="active"><a style="border-radius:9px;" href="user\register">SignUp/SignIn</a></li>
+                        <li class="active"><a style="border-radius:9px; " href="#">Logout</a></li>
+                        ****@*<form style="float:right" class="form-inline my-2 my-lg-0">
+
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-9" type="submit">Search</button>
+
+                            </form>*@
+ 
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="bottom">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="copyright">
+                        <p>© <span>2022</span> <a href="#" class="transition">Student Management System</a> All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
